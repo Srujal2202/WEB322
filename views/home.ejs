@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <style>
+    .card {
+        height: 100%;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.1); ;
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover; 
+    }
+
+  </style>
+</head>
+
+<body tabindex="-1">
+    <%- include('partials/navbar', {page:'/home'}) %>
+
+  <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-6">
+          <div class="hero-content text-center ">
+              <div class="max-w-lg">
+                  <h1 class="text-5xl font-bold">Begin Your Exciting Journey into Our Lego Collection</h1>
+      
+                  <p class="py-6">Embark on a thrilling adventure into the heart of our vast LEGO collection, where each brick has a tale to tell and every creation sparks endless fascination.</p>
+              
+                  <a href="/lego/sets" class="btn btn-primary">Explore Sets</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+
+          <div class="card bg-base-100 shadow-xl">
+              <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/7045-1.jpg"   alt="Lego set - 7045-1">
+              </figure>
+              <div class="card-body">
+              <h2 class="card-title">Hovercraft Hideout</h2>
+              <p>Embark on an enthralling journey with this hideout featuring a hidden chamber LEGO set, released in Ireland by Srujal in 1965. Re-released in 1969 as a fun learning game for adults.</p>
+                  <div class="card-actions justify-end">
+                          <a href="/lego/sets/001-1" class="btn btn-primary">View</a>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full" src="https://cdn.rebrickable.com/media/sets/7048-1.jpg" alt="Lego Set 7048-1">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Troll Warship</h2>
+            <p>Embark on a daring adventure with this captivating LEGO set, experiencing the thrill of a real warship with an army, naval officers, and nukes, released in America (USA/CAN) by SP in 2010.</p>
+            <div class="card-actions justify-end">
+                <a href="/lego/sets/70411-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full " src="https://cdn.rebrickable.com/media/sets/70433-1.jpg" alt="Lego Set - 70433-1">
+          </figure>
+          <div class="card-body">
+          <h2 class="card-title">J.B.'s Submarine</h2>
+          <p>Rev up your imagination with the LEGO® Hidden Side submarine (70433). This interactive playset merges land and water, offering a deep-sea adventure experience like no other.</p>
+              <div class="card-actions justify-end">
+                  <a href="/lego/sets/70434-1" class="btn btn-primary">View</a>
+              </div>
+          </div>
+      </div>
+
+      </div>
+  </div>
+  
+</body>
+
+</html>
